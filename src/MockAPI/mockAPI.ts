@@ -4,7 +4,7 @@ const CACHED_API_RESULTS_URL = '/cached-api-results.json';
 const deepJSONCopy = (obj: any): any => JSON.parse(JSON.stringify(obj));
 
 let results: any;
-let resolveResultsAvailable: (value: unknown) => void;
+let resolveResultsAvailable: (value: unknown) => void = () => {};
 const resultsAvailable: Promise<any> = new Promise(resolve => {
     resolveResultsAvailable = resolve;
 });
@@ -13,7 +13,7 @@ const resultsAvailable: Promise<any> = new Promise(resolve => {
     const cachedAPIResults = await fetch(CACHED_API_RESULTS_URL);
     results = await cachedAPIResults.json();
     resolveResultsAvailable(results);
-})
+})();
 
 export async function getResult(key: string) {
     if (results) {
