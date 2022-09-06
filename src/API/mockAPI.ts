@@ -3,29 +3,17 @@ const CACHED_API_RESULTS_URL = '/cached-api-results.json';
 // Yeah JSON returns 'any', that's not just a lazy TypeScript
 const deepJSONCopy = (obj: any): any => JSON.parse(JSON.stringify(obj));
 
-let results: any;
-let resolveResultsAvailable: (value: unknown) => void = () => {};
-const resultsAvailable: Promise<any> = new Promise(resolve => {
-    resolveResultsAvailable = resolve;
-});
+const mockApiPromise: Promise<any> = new Promise(async resolve => {
+        const cachedAPIResults = await fetch(CACHED_API_RESULTS_URL);
+        resolve(await cachedAPIResults.json());
+    });
 
-(async function() {
-    const cachedAPIResults = await fetch(CACHED_API_RESULTS_URL);
-    results = await cachedAPIResults.json();
-    resolveResultsAvailable(results);
-})();
-
-export async function getResult(key: string) {
-    if (results) {
-        return deepJSONCopy(results[key] || '');
-    } else {
-        const results = await resultsAvailable;
-        return deepJSONCopy(results[key] || '');
-    }
+async function getFromMockApi(key: string) {
+    return (await mockApiPromise)[key] || undefined;
 }
 
 export async function getAutocompleteList(str: string) {
-    const fullList = await getResult('autocomplete');
+    const fullList = await getFromMockApi('autocomplete');
 
     if (Object.hasOwn(fullList, str)) {
         return deepJSONCopy(fullList[str]);
@@ -35,7 +23,7 @@ export async function getAutocompleteList(str: string) {
 }
 
 export async function getCurrentConditionsEntry(cityKey: string) {
-    const fullList = await getResult('currentconditions');
+    const fullList = await getFromMockApi('currentconditions');
 
     if (Object.hasOwn(fullList, cityKey)) {
         const data = fullList[cityKey]?.[0];

@@ -1,7 +1,6 @@
-// import type { CityCurrentConditions } from "../API/dataTypes";
+import { useEffect, useState } from "react";
 import type { CityConditions } from "../API/cityConditions";
 import cityConditions from "../API/cityConditions";
-import { useEffect, useState } from "react";
 
 export default function CityInfoWidget({
     cityName,
@@ -13,11 +12,9 @@ export default function CityInfoWidget({
     const [conditions, setConditions] = useState<CityConditions>();
 
     useEffect(() => {
-        debugger;
         setConditions(undefined);
 
         (async () => {
-            debugger;
             const conditions = await cityConditions(cityKey);
             if (conditions) {
                 setConditions(conditions);

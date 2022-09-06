@@ -1,4 +1,3 @@
-import { NOT_AVAILABLE } from "./dataTypes"
 import { getAutocompleteList } from "./mockAPI"
 
 export interface City {
@@ -9,8 +8,8 @@ export interface City {
 
 function processApiCityEntry(entry: any): City {
     return {
-        name: entry?.LocalizedName || NOT_AVAILABLE,
-        country: entry?.Country?.LocalizedName || NOT_AVAILABLE,
+        name: entry?.LocalizedName || '',
+        country: entry?.Country?.LocalizedName || '',
         apiKey: entry?.Key || ''
     }
 }

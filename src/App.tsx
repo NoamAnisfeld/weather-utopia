@@ -13,7 +13,6 @@ function App() {
       <CitySearchBox {...{
         cityName,
         setCityName,
-        cityKey,
         setCityKey,
       }}
       />
