@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { getResult } from './MockAPI/mockAPI'
+import { getResult } from './API/mockAPI'
 
 function App() {
   const [text, setText] = useState('');
