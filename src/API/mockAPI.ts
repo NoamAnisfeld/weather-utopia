@@ -33,3 +33,14 @@ export async function getAutocompleteList(str: string) {
         return [];
     }
 }
+
+export async function getCurrentConditionsEntry(cityKey: string) {
+    const fullList = await getResult('currentconditions');
+
+    if (Object.hasOwn(fullList, cityKey)) {
+        const data = fullList[cityKey]?.[0];
+        return deepJSONCopy(data);
+    } else {
+        return null;
+    }
+}
