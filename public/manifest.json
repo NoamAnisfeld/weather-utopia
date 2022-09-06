@@ -1,6 +1,6 @@
 {
-  "short_name": "Wheather Viewer",
-  "name": "Displays wheather information",
+  "short_name": "Weather Viewer",
+  "name": "Displays weather information",
   "icons": [
     {
       "src": "favicon.ico",
