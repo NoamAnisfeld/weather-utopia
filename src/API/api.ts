@@ -11,7 +11,7 @@ export async function getAutocompleteList(str: string) {
 }
 
 export async function getCurrentConditionsEntry(cityKey: string) {
-    return await (await fetch(
+    return (await (await fetch(
         `${API_BASE_URL}${CURRENT_CONDITIONS_API_ENDPOINT}/${cityKey}?apikey=${API_KEY}`
-    )).json();
+    )).json())?.[0];
 }
