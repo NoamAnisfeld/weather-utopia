@@ -3,32 +3,26 @@ import { Routes, Route } from "react-router-dom";
 import Navigation from './components/Navigation';
 import Main from './components/Main';
 import Favorites from './components/Favorites';
-import useFavoriteCities from './hooks/useFavoriteCities';
+import useFavoriteCitiesContext from './hooks/favoriteCitiesContext';
 
 function App() {
-  const { favoriteCities, addFavoriteCity, removeFavoriteCity } = useFavoriteCities();
+  const FavoritesContext = useFavoriteCitiesContext();
 
   return (
-    <div className="App">
-      <h1>Weather Viewer</h1>
-      <Navigation />
-      <Routes>
-        <Route path="*" element={
-          <Main {...{
-            favoriteCities,
-            addFavoriteCity,
-            removeFavoriteCity,
-          }} />
-        } />
-        <Route path="favorites" element={
-          <Favorites {...{
-            favoriteCities,
-            addFavoriteCity,
-            removeFavoriteCity,
-          }} />
-        } />
-      </Routes>
-    </div>
+    <FavoritesContext>
+      <div className="App">
+        <h1>Weather Viewer</h1>
+        <Navigation />
+        <Routes>
+          <Route path="*" element={
+            <Main />
+          } />
+          <Route path="favorites" element={
+            <Favorites />
+          } />
+        </Routes>
+      </div>
+    </FavoritesContext>
   );
 }
 

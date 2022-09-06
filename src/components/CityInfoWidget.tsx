@@ -7,15 +7,9 @@ import Loader from "./Loader";
 export default function CityInfoWidget({
     cityName,
     cityKey,
-    favoriteCities,
-    addFavoriteCity,
-    removeFavoriteCity,
 }: {
     cityName: string,
     cityKey: string,
-    favoriteCities: string[],
-    addFavoriteCity: (cityKey: string) => void,
-    removeFavoriteCity: (cityKey: string) => void,
 }) {
     const [conditions, setConditions] = useState<CityConditions>();
 
@@ -33,9 +27,7 @@ export default function CityInfoWidget({
     return <div className="outlined">
         <FavoritesControlButton {...{
             cityKey,
-            favoriteCities,
-            addFavoriteCity,
-            removeFavoriteCity,
+            cityName,
         }} />
         <h2>{cityName}</h2>
         {conditions ?

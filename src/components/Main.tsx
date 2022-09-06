@@ -1,16 +1,9 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import CitySearchBox from './CitySearchBox';
 import CityInfoWidget from './CityInfoWidget';
 
-export default function Main({
-    favoriteCities,
-    addFavoriteCity,
-    removeFavoriteCity,
-}: {
-    favoriteCities: string[],
-    addFavoriteCity: (cityKey: string) => void,
-    removeFavoriteCity: (cityKey: string) => void,
-}) {
+export default function Main() {
+
     const [cityName, setCityName] = useState('Tel Aviv'),
     [cityKey, setCityKey] = useState('');
 
@@ -23,9 +16,6 @@ export default function Main({
         <CityInfoWidget {...{
             cityName,
             cityKey,
-            favoriteCities,
-            addFavoriteCity,
-            removeFavoriteCity,
         }}/>
     </>
 }

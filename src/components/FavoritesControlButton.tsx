@@ -1,15 +1,20 @@
+import { useContext } from "react";
+import { FavoritesContext } from "../hooks/favoriteCitiesContext";
+
 export default function FavoritesControlButton({
     cityKey,
-    favoriteCities,
-    addFavoriteCity,
-    removeFavoriteCity,
+    cityName,
 }: {
     cityKey: string,
-    favoriteCities: string[],
-    addFavoriteCity: (cityKey: string) => void,
-    removeFavoriteCity: (cityKey: string) => void,
+    cityName: string,
 }) {
-    return favoriteCities.includes(cityKey) ?
+    const {
+        favoriteCities,
+        addFavoriteCity,
+        removeFavoriteCity,
+    } = useContext(FavoritesContext)
+
+    return favoriteCities.find(item => item.key === cityKey) ?
         <button
             type="button"
             onClick={() => removeFavoriteCity(cityKey)}
@@ -18,7 +23,7 @@ export default function FavoritesControlButton({
         </button> :
         <button
             type="button"
-            onClick={() => addFavoriteCity(cityKey)}
+            onClick={() => addFavoriteCity(cityKey, cityName)}
         >
             Add to favorites
         </button>
