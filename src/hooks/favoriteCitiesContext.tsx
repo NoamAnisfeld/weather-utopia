@@ -12,6 +12,10 @@ interface City {
     name: string
 }
 
+function updateStorage(cities: City[]) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(cities));
+}
+
 export interface FavoriteCitiesProps {
     favoriteCities: City[],
     addFavoriteCity: (cityKey: string, cityName: string) => void,
@@ -35,10 +39,12 @@ export default function useFavoriteCitiesContext() {
           // ToDo: instruct the user
           return currentFavoriteCities;
         } else {
-          return [...currentFavoriteCities].concat([{
+          const newFavoriteCities = [...currentFavoriteCities].concat([{
             key: cityKey,
             name: cityName
-        }]);
+          }]);
+          updateStorage(newFavoriteCities);
+          return newFavoriteCities;
         }
       });
     }
@@ -52,6 +58,7 @@ export default function useFavoriteCitiesContext() {
         } else {
           const newFavoriteCities = [...currentFavoriteCities];
           newFavoriteCities.splice(index, 1);
+          updateStorage(newFavoriteCities);
           return newFavoriteCities;
         }
       })
