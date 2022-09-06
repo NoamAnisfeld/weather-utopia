@@ -16,7 +16,7 @@ export default function CityInfoWidget({
         }
     } = info;
 
-    return <>
+    return <div className="outlined">
         <h2>{name}</h2>
         <dl>
             <dt>Weather:</dt>
@@ -25,5 +25,5 @@ export default function CityInfoWidget({
             <dt>Temperature:</dt>
             <dd>{`${temperature}°C`}</dd>
         </dl>
-    </>
+    </div>
 }
