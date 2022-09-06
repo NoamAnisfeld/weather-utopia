@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import type { CityCurrentConditions } from './API/dataTypes';
 import { validateCityCurrentConditions } from './API/dataTypes';
 import { getResult } from './API/mockAPI'
+import CitySearchBox from './components/CitySearchBox';
 import CityInfoWidget from './components/CityInfoWidget';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <h1>Weather Viewer</h1>
+      <CitySearchBox />
       {cityConditionsInfo && <CityInfoWidget
         name={cityName}
         info={cityConditionsInfo}
