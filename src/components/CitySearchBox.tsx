@@ -22,14 +22,15 @@ export default function CitySearchBox({
     setCityName: (cityName: string) => void,
     setCityKey: (cityKey: string) => void,
 }) {
-    const [citiesList, setCitiesList] = useState<City[]>([]);
+    const [inputCityName, setInputCityName] = useState(cityName),
+        [citiesList, setCitiesList] = useState<City[]>([]);
 
     useEffect(() => {
-        cityName && (async () => {
-            const newCitiesList = await autocomplete(cityName);
+        inputCityName && (async () => {
+            const newCitiesList = await autocomplete(inputCityName);
             setCitiesList(newCitiesList);
         })();
-    }, [cityName]);
+    }, [inputCityName]);
 
     const isFirstTime = useRef(true);
     useEffect(() => {
@@ -52,8 +53,8 @@ export default function CitySearchBox({
             <input
                 type="text"
                 placeholder="start typing to search"
-                value={cityName}
-                onChange={e => setCityName(e.currentTarget.value)}
+                value={inputCityName}
+                onChange={e => setInputCityName(e.currentTarget.value)}
             />
         </label>
 
