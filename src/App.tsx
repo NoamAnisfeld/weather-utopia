@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { getResult } from './API/mockAPI'
+import CityInfoWidget from './components/CityInfoWidget';
 
 function App() {
   const [text, setText] = useState('');
@@ -23,7 +24,17 @@ function App() {
   return (
     <div className="App">
       <h1>Weather Viewer</h1>
-      {text || 'empty'}
+      <CityInfoWidget
+        name="Lumenaria"
+        info={{
+          WeatherText: "Rainy",
+          Temperature: {
+            Metric: {
+              Value: 5
+            }
+          }
+        }}
+      />
     </div>
   );
 }
