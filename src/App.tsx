@@ -22,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Weather Viewer</h1>
       {text || 'empty'}
     </div>
   );
