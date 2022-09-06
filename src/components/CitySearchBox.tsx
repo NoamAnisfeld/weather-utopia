@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 // import { getAutocompleteList } from "../API/mockAPI";
 import type { City } from "../API/autocomplete";
 import autocomplete from '../API/autocomplete';
@@ -33,16 +33,43 @@ function citiesToOptionList(cities: City[]) {
     );
 }
 
-export default function CitySearchBox() {
-    const [cityName, setCityName] = useState('Tel Aviv'),
-        [cityKey, setCityKey] = useState(''),
-        [citiesList, setCitiesList] = useState<City[]>([]);
+export default function CitySearchBox({
+    cityName,
+    setCityName,
+    cityKey,
+    setCityKey,
+}: {
+    cityName: string,
+    setCityName: (cityName: string) => void,
+    cityKey: string,
+    setCityKey: (cityKey: string) => void,
+}) {
+    const [citiesList, setCitiesList] = useState<City[]>([]);
+    debugger;
 
     useEffect(() => {
         cityName && (async () => {
-            setCitiesList(await autocomplete(cityName));
+            debugger;
+            const newCitiesList = await autocomplete(cityName);
+            setCitiesList(newCitiesList);
         })();
     }, [cityName]);
+
+    const isFirstTime = useRef(true);
+    useEffect(() => {
+        // On app init, try to fetch data even without the user
+        // actively selecting an entry from the list
+        if (citiesList.length && isFirstTime.current) {
+            isFirstTime.current = false;
+            
+            debugger;
+            const findCityKey =
+                citiesList.find(city => city.name === cityName)?.apiKey;
+            if (findCityKey) {
+                setCityKey(findCityKey);
+            }
+        }
+    }, [citiesList, setCityKey, cityName]);
 
    return <>
         <label>
