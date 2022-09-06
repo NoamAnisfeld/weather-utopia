@@ -1,40 +1,36 @@
 import './App.css';
 import { useEffect, useState } from 'react';
+import type { CityCurrentConditions } from './API/dataTypes';
+import { validateCityCurrentConditions } from './API/dataTypes';
 import { getResult } from './API/mockAPI'
 import CityInfoWidget from './components/CityInfoWidget';
 
 function App() {
-  const [text, setText] = useState('');
-
+  const [cityName, setCityName] = useState('Tel Aviv'),
+    [cityConditionsInfo, setCityConditionsInfo] =
+      useState<CityCurrentConditions>();
+  
   useEffect(() => {
     (async () => {
-      const cityName = 'Tel Aviv';
-
       const APICitiesData = await getResult('autocomplete'),
         cityData = APICitiesData[cityName]?.[0],
         cityKey = cityData.Key;
       
-      const conditionsData = await getResult('currentconditions'),
-        cityConditionsInfo = conditionsData[cityKey]?.[0];
-      
-      setText(JSON.stringify(cityConditionsInfo));
+      const conditionsInfo = validateCityCurrentConditions(
+        (await getResult('currentconditions'))[cityKey]?.[0]
+      );
+
+      setCityConditionsInfo(conditionsInfo);
     })();
-  }, []);
+  }, [cityName]);
 
   return (
     <div className="App">
       <h1>Weather Viewer</h1>
-      <CityInfoWidget
-        name="Lumenaria"
-        info={{
-          WeatherText: "Rainy",
-          Temperature: {
-            Metric: {
-              Value: 5
-            }
-          }
-        }}
-      />
+      {cityConditionsInfo && <CityInfoWidget
+        name={cityName}
+        info={cityConditionsInfo}
+      />}
     </div>
   );
 }
