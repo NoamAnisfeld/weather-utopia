@@ -1,5 +1,5 @@
-// import { getCurrentConditionsEntry } from "./mockAPI"
-import { getCurrentConditionsEntry } from "./api"
+import { getCurrentConditionsEntry } from "./mockAPI"
+// import { getCurrentConditionsEntry } from "./api"
 
 export interface CityConditions {
     weatherText: string,
