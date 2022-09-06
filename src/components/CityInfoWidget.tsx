@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { CityConditions } from "../API/cityConditions";
 import cityConditions from "../API/cityConditions";
+import Loader from "./Loader";
 
 export default function CityInfoWidget({
     cityName,
@@ -24,12 +25,14 @@ export default function CityInfoWidget({
 
     return <div className="outlined">
         <h2>{cityName}</h2>
-        {conditions && <dl>
+        {conditions ?
+        <dl>
             <dt>Weather:</dt>
             <dd>{conditions.weatherText}</dd>
 
             <dt>Temperature:</dt>
             <dd>{`${conditions.temperatureC}°C`}</dd>
-        </dl>}
+        </dl> :
+        <Loader />}
     </div>
 }
