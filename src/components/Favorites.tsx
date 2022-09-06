@@ -1,3 +1,5 @@
+import CityInfoWidget from "./CityInfoWidget";
+
 export default function Favorites({
     favoriteCities,
     addFavoriteCity,
@@ -7,7 +9,14 @@ export default function Favorites({
     addFavoriteCity: (cityKey: string) => void,
     removeFavoriteCity: (cityKey: string) => void,
 }) {
-    return <>
-      Favorite cities
-    </>
+    return <div className="outlined">
+        {favoriteCities.map(cityKey => <CityInfoWidget {...{
+                cityKey,
+                cityName: "Placeholder for city name",
+                favoriteCities,
+                addFavoriteCity,
+                removeFavoriteCity,
+            }} />
+        )}
+    </div>
 }

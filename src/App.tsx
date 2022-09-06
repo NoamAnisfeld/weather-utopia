@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navigation from './components/Navigation';
 import Main from './components/Main';
 import Favorites from './components/Favorites';
