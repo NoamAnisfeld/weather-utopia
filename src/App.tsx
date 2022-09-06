@@ -11,19 +11,19 @@ function App() {
     [cityConditionsInfo, setCityConditionsInfo] =
       useState<CityCurrentConditions>();
   
-  useEffect(() => {
-    (async () => {
-      const APICitiesData = await getResult('autocomplete'),
-        cityData = APICitiesData[cityName]?.[0],
-        cityKey = cityData.Key;
+  // useEffect(() => {
+  //   (async () => {
+  //     const APICitiesData = await getResult('autocomplete'),
+  //       cityData = APICitiesData[cityName]?.[0],
+  //       cityKey = cityData.Key;
       
-      const conditionsInfo = validateCityCurrentConditions(
-        (await getResult('currentconditions'))[cityKey]?.[0]
-      );
+  //     const conditionsInfo = validateCityCurrentConditions(
+  //       (await getResult('currentconditions'))[cityKey]?.[0]
+  //     );
 
-      setCityConditionsInfo(conditionsInfo);
-    })();
-  }, [cityName]);
+  //     setCityConditionsInfo(conditionsInfo);
+  //   })();
+  // }, [cityName]);
 
   return (
     <div className="App">

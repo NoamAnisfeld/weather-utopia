@@ -23,3 +23,13 @@ export async function getResult(key: string) {
         return deepJSONCopy(results[key] || '');
     }
 }
+
+export async function getAutocompleteList(str: string) {
+    const fullList = await getResult('autocomplete');
+
+    if (Object.hasOwn(fullList, str)) {
+        return deepJSONCopy(fullList[str]);
+    } else {
+        return [];
+    }
+}
