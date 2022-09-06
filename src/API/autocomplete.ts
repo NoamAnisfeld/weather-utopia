@@ -1,7 +1,7 @@
 import { NOT_AVAILABLE } from "./dataTypes"
 import { getAutocompleteList } from "./mockAPI"
 
-interface City {
+export interface City {
     name: string,
     country: string,
     apiKey: string,
