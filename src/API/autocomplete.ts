@@ -29,7 +29,7 @@ async function recursiveRawApiAutocomplete(str: string): Promise<any[]> {
     const list = await rawApiAutocomplete(str);
 
     if (!list.length && str.length > 1) {
-        return recursiveRawApiAutocomplete(str.substring(0, -1));
+        return recursiveRawApiAutocomplete(str.slice(0, -1));
     } else {
         return list;
     }
