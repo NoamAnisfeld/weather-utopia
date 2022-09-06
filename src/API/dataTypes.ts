@@ -5,9 +5,9 @@ interface CityCurrentConditions {
     WeatherText: string | typeof NOT_AVAILABLE,
     Temperature: {
         Metric: {
-            Value: number
+            Value: number | typeof NOT_AVAILABLE
         }
-    } | typeof NOT_AVAILABLE
+    }
 }
 
 function validateString(input: any): string {
@@ -22,7 +22,12 @@ function validateCityCurrentConditions(input: any): CityCurrentConditions {
     return {
         WeatherText: validateString(input?.WeatherText) || NOT_AVAILABLE,
         Temperature: validateNumber(input?.Temperature?.Metric?.Value) ?
-            input.Temperature : NOT_AVAILABLE
+            input.Temperature :
+            {
+                Metric: {
+                    Value: NOT_AVAILABLE
+                }
+            }
     }
 }
 

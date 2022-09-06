@@ -30,7 +30,11 @@ test('Invalid city current conditions', () => {
 
     expect(validatedData).toStrictEqual({
         WeatherText: NOT_AVAILABLE,
-        Temperature: NOT_AVAILABLE
+        Temperature: {
+            Metric: {
+                Value: NOT_AVAILABLE
+            }            
+        }
     });
 });
 
@@ -44,6 +48,10 @@ test('Partially valid city current conditions', () => {
 
     expect(validatedData).toStrictEqual({
         WeatherText: data.WeatherText,
-        Temperature: NOT_AVAILABLE
+        Temperature: {
+            Metric: {
+                Value: NOT_AVAILABLE
+            }            
+        }
     });
 });
