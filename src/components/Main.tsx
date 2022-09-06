@@ -1,11 +1,17 @@
-import { useState, useContext } from 'react';
 import CitySearchBox from './CitySearchBox';
 import CityInfoWidget from './CityInfoWidget';
 
-export default function Main() {
-
-    const [cityName, setCityName] = useState('Tel Aviv'),
-    [cityKey, setCityKey] = useState('');
+export default function Main({
+    cityName,
+    setCityName,
+    cityKey,
+    setCityKey,
+}:{
+    cityName: string,
+    setCityName: (cityName: string) => void,
+    cityKey: string,
+    setCityKey: (cityKey: string) => void,
+} ) {
 
     return <>
         <CitySearchBox {...{
