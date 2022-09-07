@@ -1,5 +1,4 @@
-import { getAutocompleteList } from "./mockAPI"
-// import { getAutocompleteList } from "./api"
+import { getAutocompleteList } from "./api";
 
 export interface City {
     name: string,
