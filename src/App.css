@@ -72,6 +72,11 @@ main {
   padding-inline: 0;
 }
 
+.city-search input ,
+.city-search select {
+    width: 25ch;
+}
+
 .info-area {
   background: green;
   padding: 2em;
