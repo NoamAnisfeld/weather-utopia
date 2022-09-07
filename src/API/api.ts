@@ -1,6 +1,6 @@
 import * as mockApi from './mockAPI';
 
-const API_BASE_URL = 'http://dataservice.accuweather.com',
+const API_BASE_URL = 'https://dataservice.accuweather.com',
     AUTOCOMPLETE_API_ENDPOINT = '/locations/v1/cities/autocomplete', // ?apikey=${apiKey}&q={string}
     CURRENT_CONDITIONS_API_ENDPOINT = '/currentconditions/v1/', // /${cityKey}?apikey=${apiKey}
     FORECAST_API_ENDPOINT = '/forecasts/v1/daily/5day/', // /${cityKey}?apikey=${apiKey}
