@@ -13,17 +13,19 @@ export default function Main({
     setCityKey: (cityKey: string) => void,
 } ) {
 
-    return <main>
-        <CitySearchBox {...{
-            cityName,
-            setCityName,
-            setCityKey,
-        }} />
+    return <>
+        <div className="search-area">
+            <CitySearchBox {...{
+                cityName,
+                setCityName,
+                setCityKey,
+            }} />
+        </div>
         <div className="info-area">
             <CityInfoWidget {...{
                 cityName,
                 cityKey,
             }}/>
         </div>
-    </main>
+    </>
 }

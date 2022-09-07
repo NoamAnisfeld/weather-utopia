@@ -9,7 +9,7 @@ export default function Favorites() {
         removeFavoriteCity,
     } = useContext(FavoritesContext)
 
-    return <div className="outlined">
+    return <div className="favorites-area">
         {favoriteCities.map(city => <CityInfoWidget {...{
                 cityKey: city.key,
                 cityName: city.name,

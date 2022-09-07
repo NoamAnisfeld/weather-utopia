@@ -48,25 +48,34 @@ nav > a {
 }
 
 main {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  grid-auto-flow: column;
-  grid-auto-columns: auto 1fr;
   width: 100%;
   height: 100%;
 }
 
-.city-search {
+.search-area {
   background: yellow;
+  width: auto;
+  flex-grow: 1;
+}
+
+.city-search {
   width: min-content;
-  padding: 1em 5em;
+  padding: 1em 3em;
   display: flex;
   flex-direction: column;
+}
+
+.city-search label {
+  padding-inline: 0;
 }
 
 .info-area {
   background: green;
   padding: 2em;
+  flex-grow: 10;
   display: flex;
   justify-content: center;
 }
@@ -74,8 +83,17 @@ main {
 .city-info-widget {
   outline: 1px solid;
   padding: 1em;
+  margin: 1em;
   width: 30ch;
   height: 20em;
   background: white;
   border-radius: 15px;
+}
+
+.favorites-area {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  background: gray;
 }

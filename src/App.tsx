@@ -18,19 +18,21 @@ function App() {
       <div className="App">
         <h1>Weather Viewer</h1>
         <Navigation />
-        <Routes>
-          <Route path="*" element={
-            <Main {...{
-              cityName,
-              setCityName,
-              cityKey,
-              setCityKey,
-            }} />
-          } />
-          <Route path="favorites" element={
-            <Favorites />
-          } />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="*" element={
+              <Main {...{
+                cityName,
+                setCityName,
+                cityKey,
+                setCityKey,
+              }} />
+            } />
+            <Route path="favorites" element={
+              <Favorites />
+            } />
+          </Routes>
+        </main>
       </div>
     </FavoritesContext>
   );
