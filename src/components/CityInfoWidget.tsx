@@ -24,7 +24,7 @@ export default function CityInfoWidget({
         })()
     }, [cityKey]);
 
-    return <div className="outlined">
+    return <div className="city-info-widget">
         <FavoritesControlButton {...{
             cityKey,
             cityName,

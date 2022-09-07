@@ -47,7 +47,7 @@ export default function CitySearchBox({
         }
     }, [citiesList, cityName, setCityKey]);
 
-   return <>
+   return <div className="city-search">
         <label>
             City:
             <input
@@ -70,5 +70,5 @@ export default function CitySearchBox({
         >
             {citiesToOptionList(citiesList)}
         </select>
-    </>
+    </div>
 }

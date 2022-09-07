@@ -24,6 +24,12 @@ h1 {
   background: lightblue;
 }
 
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
 nav {
   display: flex;
   gap: 1em;
@@ -39,4 +45,37 @@ nav > a {
   padding-inline: 1em;
   text-decoration: none;
   font-weight: bold;
+}
+
+main {
+  display: grid;
+  padding: 0;
+  grid-auto-flow: column;
+  grid-auto-columns: auto 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.city-search {
+  background: yellow;
+  width: min-content;
+  padding: 1em 5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-area {
+  background: green;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.city-info-widget {
+  outline: 1px solid;
+  padding: 1em;
+  width: 30ch;
+  height: 20em;
+  background: white;
+  border-radius: 15px;
 }
