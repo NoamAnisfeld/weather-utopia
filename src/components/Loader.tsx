@@ -1,3 +1,5 @@
 export default function Loader() {
-    return <strong className="loader">Loading...</strong>
+    return <div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
+    </div>
 }
