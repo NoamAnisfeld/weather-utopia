@@ -2,24 +2,15 @@ import { useEffect, useState, useRef } from "react";
 import type { City } from "../API/autocomplete";
 import autocomplete from '../API/autocomplete';
 
-function citiesToOptionList(cities: City[]) {
-    return cities.map(city =>
-        <option
-            value={city.apiKey}
-            key={city.apiKey}
-        >
-            {city.name}
-        </option>
-    );
-}
-
 export default function CitySearchBox({
     cityName,
     setCityName,
+    cityKey,
     setCityKey,
 }: {
     cityName: string,
     setCityName: (cityName: string) => void,
+    cityKey: string,
     setCityKey: (cityKey: string) => void,
 }) {
     const [inputCityName, setInputCityName] = useState(cityName),
@@ -47,7 +38,19 @@ export default function CitySearchBox({
         }
     }, [citiesList, cityName, setCityKey]);
 
-   return <div className="city-search">
+    function citiesToOptionList(cities: City[]) {
+        return cities.map(city =>
+            <option
+                value={city.apiKey}
+                key={city.apiKey}
+                selected={city.apiKey === cityKey}
+            >
+                {city.name}
+            </option>
+        );
+    }
+    
+    return <div className="city-search">
         <label>
             City:
             <input
