@@ -16,15 +16,27 @@ export default function FavoritesControlButton({
 
     return favoriteCities.find(item => item.key === cityKey) ?
         <button
+            className="bg-transparent border-0"
             type="button"
+            title="Remove from favorites"
             onClick={() => removeFavoriteCity(cityKey)}
         >
-            Remove from favorites
-        </button> :
+            <img
+                src={`${process.env.PUBLIC_URL}/assets/star-fill.svg`}
+                width="20"
+                height="20"
+            />
+         </button> :
         <button
+            className="bg-transparent border-0"
             type="button"
+            title="Add to favorites"
             onClick={() => addFavoriteCity(cityKey, cityName)}
         >
-            Add to favorites
+            <img
+                src={`${process.env.PUBLIC_URL}/assets/star.svg`}
+                width="20"
+                height="20"
+            />
         </button>
 }
