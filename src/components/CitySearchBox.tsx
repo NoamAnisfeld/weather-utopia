@@ -1,6 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import type { City } from "../API/autocomplete";
 import autocomplete from '../API/autocomplete';
+import Form from 'react-bootstrap/Form';
+import FormSelect from 'react-bootstrap/FormSelect';
 
 export default function CitySearchBox({
     cityName,
@@ -51,18 +53,18 @@ export default function CitySearchBox({
     }
     
     return <div className="city-search">
-        <label>
+        <Form.Label>
             City:
-            <input
+            <Form.Control
                 type="text"
                 placeholder="start typing to search"
                 value={inputText}
                 onChange={e => setInputText(e.currentTarget.value)}
             />
-        </label>
+        </Form.Label>
 
-        <select
-            size={5}
+        <FormSelect
+            htmlSize={5}
             onChange={e => {
                 const newCityKey = e.currentTarget.value; 
                 setCityKey(newCityKey);
@@ -73,6 +75,6 @@ export default function CitySearchBox({
             }}
         >
             {citiesToOptionList(citiesList)}
-        </select>
+        </FormSelect>
     </div>
 }
