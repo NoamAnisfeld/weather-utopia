@@ -16,7 +16,6 @@ function App() {
   return (
     <FavoritesContext>
       <div className="App">
-        <h1>Weather Viewer</h1>
         <Navigation />
         <main>
           <Routes>

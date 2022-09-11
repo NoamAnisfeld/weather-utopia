@@ -7,7 +7,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export default function Navigation() {
 
     return <Navbar bg="secondary" variant="dark">
-        <Container fluid className="justify-content-end">
+        <Container fluid>
+            <Navbar.Brand>
+                <h1>Weather Viewer</h1>
+            </Navbar.Brand>
             <Nav className="text-bg-primary">
                 <Nav.Item>
                     <Link className="nav-link" to="/">Main</Link>
