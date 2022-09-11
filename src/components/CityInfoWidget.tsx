@@ -34,14 +34,29 @@ export default function CityInfoWidget({
                 }} />
         </Card.Header>
         <Card.Body className="fs-4">
-            {conditions ? <dl className="city-info-details d-flex flex-column justify-content-around align-content-center">
+            <dl className="city-info-details d-flex flex-column justify-content-around align-content-center">
                 <dt>Weather:</dt>
-                <dd>{conditions.weatherText}</dd>
+                <dd>
+                    {conditions ?
+                    conditions.weatherText :
+                    <>
+                        {""}
+                        <Loader />
+                    </>
+                    }
+                </dd>
 
                 <dt>Temperature:</dt>
-                <dd>{`${conditions.temperatureC}°C`}</dd>
-            </dl> :
-            <Loader />}
+                <dd>
+                    {conditions ?
+                    `${conditions.temperatureC}°C` :
+                    <>
+                        {""}
+                        <Loader />
+                    </>
+                    }
+                </dd>
+            </dl>
         </Card.Body>
     </Card>
 }
