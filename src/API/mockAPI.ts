@@ -1,4 +1,4 @@
-const CACHED_API_RESULTS_URL = '/cached-api-results.json';
+const CACHED_API_RESULTS_URL = `${process.env.PUBLIC_URL}/cached-api-results.json`;
 
 // Yeah JSON returns 'any', that's not just a lazy TypeScript
 const deepJSONCopy = (obj: any): any => JSON.parse(JSON.stringify(obj));
