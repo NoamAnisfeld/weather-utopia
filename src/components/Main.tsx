@@ -26,7 +26,7 @@ export default function Main({
                     setCityKey,
                 }} />
             </Col>
-            <Col className="info-area p-5 bg-primary">
+            <Col className="info-area p-5 bg-primary d-flex justify-content-center">
                 <CityInfoWidget {...{
                     cityName,
                     cityKey,
