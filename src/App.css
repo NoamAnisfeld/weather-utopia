@@ -1,3 +1,20 @@
+.city-info-widget {
+  width: 35ch;
+  height: 40ch;
+}
+
+.city-info-details {
+  height: 100%;
+}
+
+.city-info-details dt:not(:first-child) {
+  margin-top: 2em;
+}
+
+.city-info-details dd {
+  margin-inline-start: 3ch;
+}
+
 /* .App {
   display: flex;
   flex-direction: column;
