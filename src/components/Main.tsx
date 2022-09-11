@@ -1,5 +1,8 @@
 import CitySearchBox from './CitySearchBox';
 import CityInfoWidget from './CityInfoWidget';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function Main({
     cityName,
@@ -13,20 +16,22 @@ export default function Main({
     setCityKey: (cityKey: string) => void,
 } ) {
 
-    return <>
-        <div className="search-area">
-            <CitySearchBox {...{
-                cityName,
-                setCityName,
-                cityKey,
-                setCityKey,
-            }} />
-        </div>
-        <div className="info-area">
-            <CityInfoWidget {...{
-                cityName,
-                cityKey,
-            }}/>
-        </div>
-    </>
+    return <Container fluid>
+        <Row>
+            <Col className="search-area col-4 p-5 bg-secondary">
+                <CitySearchBox {...{
+                    cityName,
+                    setCityName,
+                    cityKey,
+                    setCityKey,
+                }} />
+            </Col>
+            <Col className="info-area p-5 bg-primary">
+                <CityInfoWidget {...{
+                    cityName,
+                    cityKey,
+                }}/>
+            </Col>
+        </Row>
+    </Container>
 }
