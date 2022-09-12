@@ -1,7 +1,7 @@
 {
-  "name": "weather-utopia",
+  "name": "weather-viewer",
   "version": "0.1.0",
-  "homepage": "https://NoamAnisfeld.github.io/weather-utopia",
+  "homepage": "https://NoamAnisfeld.github.io/weather-viewer",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
