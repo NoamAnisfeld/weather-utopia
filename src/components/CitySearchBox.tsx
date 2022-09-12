@@ -47,10 +47,11 @@ export default function CitySearchBox({
         inputText &&
         (inputText !== cityName || !citiesList.length) &&
             (async () => {
+                console.count('autocomplete effect');
                 const newCitiesList = await autocomplete(inputText);
                 setCitiesList(newCitiesList);
             })();
-    }, [inputText, cityName, citiesList]);
+    }, [inputText, cityName, citiesList.length]);
 
     const isFirstTime = useRef(true);
     useEffect(() => {
