@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { FavoritesContext } from "../hooks/favoriteCitiesContext";
+import { FavoriteCitiesContext } from "../FavoriteCitiesContext";
 
 export default function FavoritesControlButton({
     cityKey,
@@ -8,11 +8,16 @@ export default function FavoritesControlButton({
     cityKey: string,
     cityName: string,
 }) {
+    const favoriteCitiesContext = useContext(FavoriteCitiesContext);
+    if (!favoriteCitiesContext) {
+        return <></>;
+    }
+
     const {
         favoriteCities,
         addFavoriteCity,
         removeFavoriteCity,
-    } = useContext(FavoritesContext)
+    } = favoriteCitiesContext;
 
     return favoriteCities.find(item => item.key === cityKey) ?
         <button
@@ -31,7 +36,10 @@ export default function FavoritesControlButton({
             className="bg-transparent border-0"
             type="button"
             title="Add to favorites"
-            onClick={() => addFavoriteCity(cityKey, cityName)}
+            onClick={() => addFavoriteCity({
+                key: cityKey,
+                name: cityName
+            })}
         >
             <img
                 src={`${process.env.PUBLIC_URL}/assets/star.svg`}
