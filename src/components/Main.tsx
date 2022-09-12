@@ -18,7 +18,7 @@ export default function Main({
 
     return <Container>
         <Row>
-            <Col className="search-area p-5">
+            <Col className="search-area py-5">
                 <CitySearchBox {...{
                     cityName,
                     setCityName,

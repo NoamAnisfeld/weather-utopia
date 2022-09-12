@@ -1,3 +1,8 @@
+.city-search {
+  max-width: 40ch;
+  min-width: min(15ch, 90vw);
+}
+
 .city-info-widget {
   width: 35ch;
   height: 40ch;

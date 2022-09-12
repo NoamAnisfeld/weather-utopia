@@ -53,7 +53,7 @@ export default function CitySearchBox({
         );
     }
     
-    return <Container fluid className="city-search">
+    return <Container className="city-search">
         <Form.Label className="w-100">
             <span className="fs-5 fw-bold">
                 City:
