@@ -20,9 +20,7 @@ function useCitiesToOptionList({
             key={city.apiKey}
         >
             {city.name}
-        </option>), [
-            cities, currentCityKey, currentInputText
-        ]
+        </option>), [cities]
     );
 }
 
