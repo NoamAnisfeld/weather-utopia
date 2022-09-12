@@ -6,17 +6,17 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function Navigation() {
 
-    return <Navbar bg="secondary" variant="dark">
+    return <Navbar bg="secondary" variant="dark" className="p-0">
         <Container fluid>
             <Navbar.Brand>
                 <h1>Weather Viewer</h1>
             </Navbar.Brand>
-            <Nav className="text-bg-primary">
+            <Nav>
                 <Nav.Item>
-                    <Link className="nav-link" to="/">Main</Link>
+                    <Link className="nav-link active text-bg-primary p-4 mx-2" to="/">Main</Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Link className="nav-link" to="favorites">Favorites</Link>
+                    <Link className="nav-link text-bg-primary p-4 mx-2" to="favorites">Favorites</Link>
                 </Nav.Item>
             </Nav>
         </Container>

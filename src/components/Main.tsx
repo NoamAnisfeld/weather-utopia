@@ -16,9 +16,9 @@ export default function Main({
     setCityKey: (cityKey: string) => void,
 } ) {
 
-    return <Container fluid>
+    return <Container>
         <Row>
-            <Col className="search-area col-4 p-5 bg-secondary">
+            <Col className="search-area p-5">
                 <CitySearchBox {...{
                     cityName,
                     setCityName,
@@ -26,7 +26,7 @@ export default function Main({
                     setCityKey,
                 }} />
             </Col>
-            <Col className="info-area p-5 bg-primary d-flex justify-content-center">
+            <Col className="info-area p-5 d-flex justify-content-center">
                 <CityInfoWidget {...{
                     cityName,
                     cityKey,

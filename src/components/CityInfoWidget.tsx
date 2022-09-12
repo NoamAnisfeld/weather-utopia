@@ -25,8 +25,8 @@ export default function CityInfoWidget({
         })()
     }, [cityKey]);
 
-    return <Card className="city-info-widget">
-        <Card.Header className="d-flex justify-content-between">
+    return <Card className="city-info-widget bg-info">
+        <Card.Header className="d-flex justify-content-between bg-primary">
                 <h2>{cityName}</h2>
                 <FavoritesControlButton {...{
                     cityKey,
