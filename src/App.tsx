@@ -4,19 +4,16 @@ import { Routes, Route } from "react-router-dom";
 import Navigation from './components/Navigation';
 import Main from './components/Main';
 import Favorites from './components/Favorites';
-import useFavoriteCitiesContext from './hooks/favoriteCitiesContext';
+import { FavoriteCitiesContextProvider } from './FavoriteCitiesContext';
 
 function App() {
-  const FavoritesContext = useFavoriteCitiesContext();
-  
   const DEFAULT_CITY = 'Tel Aviv';
   const [cityName, setCityName] = useState(DEFAULT_CITY),
     [cityKey, setCityKey] = useState('');
 
   return (
-    <FavoritesContext>
+    <FavoriteCitiesContextProvider>
       <div className="App">
-        <h1>Weather Viewer</h1>
         <Navigation />
         <main>
           <Routes>
@@ -34,7 +31,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </FavoritesContext>
+    </FavoriteCitiesContextProvider>
   );
 }
 

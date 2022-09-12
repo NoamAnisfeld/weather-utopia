@@ -1,4 +1,26 @@
-.App {
+.city-search {
+  max-width: 40ch;
+  min-width: min(15ch, 90vw);
+}
+
+.city-info-widget {
+  width: 35ch;
+  height: 40ch;
+}
+
+.city-info-details {
+  height: 100%;
+}
+
+.city-info-details dt:not(:first-child) {
+  margin-top: 2em;
+}
+
+.city-info-details dd {
+  margin-inline-start: 3ch;
+}
+
+/* .App {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,4 +123,4 @@ main {
   flex-wrap: wrap;
   width: 100%;
   background: gray;
-}
+} */
