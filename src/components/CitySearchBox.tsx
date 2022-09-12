@@ -5,15 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import FormSelect from 'react-bootstrap/FormSelect';
 
-function useCitiesToOptionList({
-    cities,
-    currentCityKey,
-    currentInputText,
-}: {
-    cities: City[],
-    currentCityKey: string,
-    currentInputText: string,
-}) {
+function useCitiesToOptionList(cities: City[]) {
     return useMemo(() => cities.map(city =>
         <option
             value={city.apiKey}
@@ -102,11 +94,7 @@ export default function CitySearchBox({
                 };
             }}
         >
-            {useCitiesToOptionList({
-                cities: citiesList,
-                currentCityKey: cityKey,
-                currentInputText: inputText,
-            })}
+            {useCitiesToOptionList(citiesList)}
         </FormSelect>
     </Container>
 }
