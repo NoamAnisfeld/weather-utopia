@@ -7,32 +7,32 @@ import Favorites from './components/Favorites';
 import { FavoriteCitiesContextProvider } from './FavoriteCitiesContext';
 
 function App() {
-  const DEFAULT_CITY = 'Tel Aviv';
-  const [cityName, setCityName] = useState(DEFAULT_CITY),
-    [cityKey, setCityKey] = useState('');
+    const DEFAULT_CITY = 'Tel Aviv';
+    const [cityName, setCityName] = useState(DEFAULT_CITY),
+        [cityKey, setCityKey] = useState('');
 
-  return (
-    <FavoriteCitiesContextProvider>
-      <div className="App">
-        <Navigation />
-        <main>
-          <Routes>
-            <Route path="*" element={
-              <Main {...{
-                cityName,
-                setCityName,
-                cityKey,
-                setCityKey,
-              }} />
-            } />
-            <Route path="favorites" element={
-              <Favorites />
-            } />
-          </Routes>
-        </main>
-      </div>
-    </FavoriteCitiesContextProvider>
-  );
+    return (
+        <div className="App">
+            <Navigation />
+            <main>
+                <FavoriteCitiesContextProvider>
+                    <Routes>
+                        <Route path="*" element={
+                            <Main {...{
+                                cityName,
+                                setCityName,
+                                cityKey,
+                                setCityKey,
+                            }} />
+                        } />
+                        <Route path="favorites" element={
+                            <Favorites />
+                        } />
+                    </Routes>
+                </FavoriteCitiesContextProvider>
+            </main>
+        </div>
+    );
 }
 
 export default App;

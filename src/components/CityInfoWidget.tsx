@@ -39,22 +39,14 @@ export default function CityInfoWidget({
                 <dd>
                     {conditions ?
                     conditions.weatherText :
-                    <>
-                        {""}
-                        <Loader />
-                    </>
-                    }
+                    <Loader />}
                 </dd>
 
                 <dt>Temperature:</dt>
                 <dd>
                     {conditions ?
                     `${conditions.temperatureC}°C` :
-                    <>
-                        {""}
-                        <Loader />
-                    </>
-                    }
+                    <Loader />}
                 </dd>
             </dl>
         </Card.Body>

@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 export default function Favorites() {
     const favoriteCitiesContext = useContext(FavoriteCitiesContext);
     if (!favoriteCitiesContext) {
-        return <></>;
+        return <>Something went wrong</>;
     }
 
     const {
@@ -17,10 +17,14 @@ export default function Favorites() {
         removeFavoriteCity,
     } = favoriteCitiesContext;
 
-    return <Container className="favorites-area p-5">
+    return <Container fluid className="favorites-area p-5">
         <Row className="justify-content-center">
-            {favoriteCities.map(city => <Col className="col-auto">
-                <CityInfoWidget {...{
+            {favoriteCities.map(city =>
+                <Col
+                    key={city.key}
+                    className="col-auto"
+                >
+                    <CityInfoWidget {...{
                         cityKey: city.key,
                         cityName: city.name,
                     }} />
