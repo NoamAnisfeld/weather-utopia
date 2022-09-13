@@ -1,7 +1,8 @@
+import type { ApiEndpoints } from "./apiInterface";
+
 const CACHED_API_RESULTS_URL = `${process.env.PUBLIC_URL}/cached-api-results.json`;
 
-// Yeah JSON returns 'any', that's not just a lazy TypeScript
-const deepJSONCopy = (obj: any): any => JSON.parse(JSON.stringify(obj));
+const deepJSONClone = (obj: any): any => JSON.parse(JSON.stringify(obj));
 
 const mockApiPromise: Promise<any> = new Promise(async resolve => {
         const cachedAPIResults = await fetch(CACHED_API_RESULTS_URL);
@@ -12,23 +13,31 @@ async function getFromMockApi(key: string) {
     return (await mockApiPromise)[key] || undefined;
 }
 
-export async function getAutocompleteList(str: string) {
-    const fullList = await getFromMockApi('autocomplete');
+const mockApi: ApiEndpoints = {
 
-    if (Object.hasOwn(fullList, str)) {
-        return deepJSONCopy(fullList[str]);
-    } else {
-        return [];
+    async getAutocompleteList(str: string) {
+        const fullAutoCompleteList = await getFromMockApi('autocomplete');
+    
+        if (Object.hasOwn(fullAutoCompleteList, str)) {
+            return deepJSONClone(fullAutoCompleteList[str]);
+        } else {
+            return [];
+        }
+    },
+    
+    async getCurrentConditionsEntry(cityKey: string) {
+        const fullConditionsList = await getFromMockApi('currentconditions');
+    
+        if (Object.hasOwn(fullConditionsList, cityKey)) {
+            const data = fullConditionsList[cityKey]?.[0];
+            return deepJSONClone(data);
+        } else {
+            return null;
+        }
     }
 }
 
-export async function getCurrentConditionsEntry(cityKey: string) {
-    const fullList = await getFromMockApi('currentconditions');
-
-    if (Object.hasOwn(fullList, cityKey)) {
-        const data = fullList[cityKey]?.[0];
-        return deepJSONCopy(data);
-    } else {
-        return null;
-    }
-}
+export const {
+    getAutocompleteList,
+    getCurrentConditionsEntry
+}: ApiEndpoints = mockApi;

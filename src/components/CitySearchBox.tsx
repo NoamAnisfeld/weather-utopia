@@ -8,10 +8,10 @@ import FormSelect from 'react-bootstrap/FormSelect';
 function useCitiesToOptionList(cities: City[]) {
     return useMemo(() => cities.map(city =>
         <option
-            value={city.apiKey}
-            key={city.apiKey}
+            value={city.key}
+            key={city.key}
         >
-            {city.name}
+            {city.name} ({city.country})
         </option>), [cities]
     );
 }
@@ -51,7 +51,7 @@ export default function CitySearchBox({
             isFirstTime.current = false;
             
             const findCityKey =
-                citiesList.find(city => city.name === cityName)?.apiKey;
+                citiesList.find(city => city.name === cityName)?.key;
             if (findCityKey) {
                 setCityKey(findCityKey);
             }
@@ -85,7 +85,7 @@ export default function CitySearchBox({
             value={cityKey}
             onChange={e => {
                 const newCityKey = e.currentTarget.value,
-                    newCityName = citiesList.find(item => item.apiKey === newCityKey)?.name;
+                    newCityName = citiesList.find(city => city.key === newCityKey)?.name;
 
                 setCityKey(newCityKey);
                 setCityName(newCityName || 'city name is missing');

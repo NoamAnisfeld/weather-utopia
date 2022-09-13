@@ -12,6 +12,7 @@ export default async function cityConditions(cityKey: string): Promise<CityCondi
     if (!data) {
         return null;
     }
+    
     return {
         weatherText: data?.WeatherText || '',
         temperatureC: Number(data?.Temperature?.Metric?.Value) || undefined,
