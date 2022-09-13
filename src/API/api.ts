@@ -21,7 +21,11 @@ const api: ApiEndpoints = {
     }
 }
 
+const urlParamToggle = (new URLSearchParams(window.location.search)).get('useRealApi'),
+    useRealApi = process.env.NODE_ENV === 'production' ||
+        (urlParamToggle && urlParamToggle !== '0');
+
 export const {
     getAutocompleteList,
     getCurrentConditionsEntry
-}: ApiEndpoints = process.env.NODE_ENV === 'production' ? api : mockApi;
+}: ApiEndpoints = useRealApi ? api : mockApi;
