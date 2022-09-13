@@ -37,7 +37,6 @@ export default function CitySearchBox({
         inputText &&
         (inputText !== cityName || !citiesList.length) &&
             (async () => {
-                console.count('autocomplete effect');
                 const newCitiesList = await autocomplete(inputText);
                 setCitiesList(newCitiesList);
             })();
@@ -82,7 +81,7 @@ export default function CitySearchBox({
             ref={selectElementRef}
             autoFocus={!autoFocusTextInput}
             htmlSize={5}
-            value={cityKey}
+            value={citiesList.find(city => city.key === cityKey) ? cityKey : undefined}
             onChange={e => {
                 const newCityKey = e.currentTarget.value,
                     newCityName = citiesList.find(city => city.key === newCityKey)?.name;
