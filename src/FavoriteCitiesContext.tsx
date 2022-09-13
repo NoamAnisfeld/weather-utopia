@@ -1,4 +1,4 @@
-import { useState, createContext, PropsWithChildren } from "react";
+import { useState, createContext, useEffect } from "react";
 import { safeJSONParse } from "./utils/utils";
 
 const MAX_FAVORITE_CITIES = 3,
@@ -48,6 +48,8 @@ export const FavoriteCitiesContext = createContext<FavoriteCitiesProps | null>(n
 
 export function FavoriteCitiesContextProvider ({ children }: React.PropsWithChildren) {
     const [citiesList, setCitiesList] = useState(favoriteCities);
+
+    useEffect(() => updateStorage(citiesList), [citiesList]);
 
     function addFavoriteCity(city: City) {
         setCitiesList(list => {
