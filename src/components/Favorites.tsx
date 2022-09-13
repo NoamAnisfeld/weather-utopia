@@ -13,8 +13,6 @@ export default function Favorites() {
 
     const {
         favoriteCities,
-        addFavoriteCity,
-        removeFavoriteCity,
     } = favoriteCitiesContext;
 
     return <Container fluid className="favorites-area p-5">
