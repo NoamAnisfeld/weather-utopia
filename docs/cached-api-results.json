@@ -1,0 +1,1217 @@
+{
+    "autocomplete": {
+        "B": [
+            {
+                "Version": 1,
+                "Key": "101924",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Beijing",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "BJ",
+                    "LocalizedName": "Beijing"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "107487",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Bogota",
+                "Country": {
+                    "ID": "CO",
+                    "LocalizedName": "Colombia"
+                },
+                "AdministrativeArea": {
+                    "ID": "DC",
+                    "LocalizedName": "Distrito Capital de Bogotá"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "178087",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Berlin",
+                "Country": {
+                    "ID": "DE",
+                    "LocalizedName": "Germany"
+                },
+                "AdministrativeArea": {
+                    "ID": "BE",
+                    "LocalizedName": "Berlin"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "207375",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Baghdad",
+                "Country": {
+                    "ID": "IQ",
+                    "LocalizedName": "Iraq"
+                },
+                "AdministrativeArea": {
+                    "ID": "BG",
+                    "LocalizedName": "Baghdad"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "318849",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Bangkok",
+                "Country": {
+                    "ID": "TH",
+                    "LocalizedName": "Thailand"
+                },
+                "AdministrativeArea": {
+                    "ID": "10",
+                    "LocalizedName": "Bangkok"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "204108",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Bengaluru",
+                "Country": {
+                    "ID": "IN",
+                    "LocalizedName": "India"
+                },
+                "AdministrativeArea": {
+                    "ID": "KA",
+                    "LocalizedName": "Karnataka"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "222888",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Busan",
+                "Country": {
+                    "ID": "KR",
+                    "LocalizedName": "South Korea"
+                },
+                "AdministrativeArea": {
+                    "ID": "26",
+                    "LocalizedName": "Busan"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "56913",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Bengbu",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "AH",
+                    "LocalizedName": "Anhui"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "58493",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Bijie",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "GZ",
+                    "LocalizedName": "Guizhou"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "61041",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Bazhong",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "SC",
+                    "LocalizedName": "Sichuan"
+                }
+            }
+        ],
+        "Bee": [
+            {
+                "Version": 1,
+                "Key": "215752",
+                "Type": "City",
+                "Rank": 41,
+                "LocalizedName": "Beersheba",
+                "Country": {
+                    "ID": "IL",
+                    "LocalizedName": "Israel"
+                },
+                "AdministrativeArea": {
+                    "ID": "D",
+                    "LocalizedName": "Southern District"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "31476",
+                "Type": "City",
+                "Rank": 63,
+                "LocalizedName": "Beersel",
+                "Country": {
+                    "ID": "BE",
+                    "LocalizedName": "Belgium"
+                },
+                "AdministrativeArea": {
+                    "ID": "VBR",
+                    "LocalizedName": "Flemish Brabant"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "31822",
+                "Type": "City",
+                "Rank": 63,
+                "LocalizedName": "Beernem",
+                "Country": {
+                    "ID": "BE",
+                    "LocalizedName": "Belgium"
+                },
+                "AdministrativeArea": {
+                    "ID": "VWV",
+                    "LocalizedName": "West Flanders"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "173266",
+                "Type": "City",
+                "Rank": 63,
+                "LocalizedName": "Beelitz",
+                "Country": {
+                    "ID": "DE",
+                    "LocalizedName": "Germany"
+                },
+                "AdministrativeArea": {
+                    "ID": "BB",
+                    "LocalizedName": "Brandenburg"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "964727",
+                "Type": "City",
+                "Rank": 65,
+                "LocalizedName": "Beerse",
+                "Country": {
+                    "ID": "BE",
+                    "LocalizedName": "Belgium"
+                },
+                "AdministrativeArea": {
+                    "ID": "VAN",
+                    "LocalizedName": "Antwerp"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "170086",
+                "Type": "City",
+                "Rank": 65,
+                "LocalizedName": "Beeck",
+                "Country": {
+                    "ID": "DE",
+                    "LocalizedName": "Germany"
+                },
+                "AdministrativeArea": {
+                    "ID": "NW",
+                    "LocalizedName": "North Rhine-Westphalia"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "3074112",
+                "Type": "City",
+                "Rank": 65,
+                "LocalizedName": "Beejoliya Kalan",
+                "Country": {
+                    "ID": "IN",
+                    "LocalizedName": "India"
+                },
+                "AdministrativeArea": {
+                    "ID": "RJ",
+                    "LocalizedName": "Rajasthan"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "300862",
+                "Type": "City",
+                "Rank": 65,
+                "LocalizedName": "Beer",
+                "Country": {
+                    "ID": "SO",
+                    "LocalizedName": "Somalia"
+                },
+                "AdministrativeArea": {
+                    "ID": "TO",
+                    "LocalizedName": "Togdheer"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "2109297",
+                "Type": "City",
+                "Rank": 65,
+                "LocalizedName": "Beech Grove",
+                "Country": {
+                    "ID": "US",
+                    "LocalizedName": "United States"
+                },
+                "AdministrativeArea": {
+                    "ID": "IN",
+                    "LocalizedName": "Indiana"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "2225627",
+                "Type": "City",
+                "Rank": 65,
+                "LocalizedName": "Beecher",
+                "Country": {
+                    "ID": "US",
+                    "LocalizedName": "United States"
+                },
+                "AdministrativeArea": {
+                    "ID": "MI",
+                    "LocalizedName": "Michigan"
+                }
+            }
+        ],
+        "J": [
+            {
+                "Version": 1,
+                "Key": "208971",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Jakarta",
+                "Country": {
+                    "ID": "ID",
+                    "LocalizedName": "Indonesia"
+                },
+                "AdministrativeArea": {
+                    "ID": "JK",
+                    "LocalizedName": "Jakarta"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "106570",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Jinan",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "SD",
+                    "LocalizedName": "Shandong"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "205617",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Jaipur",
+                "Country": {
+                    "ID": "IN",
+                    "LocalizedName": "India"
+                },
+                "AdministrativeArea": {
+                    "ID": "RJ",
+                    "LocalizedName": "Rajasthan"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "305448",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Johannesburg",
+                "Country": {
+                    "ID": "ZA",
+                    "LocalizedName": "South Africa"
+                },
+                "AdministrativeArea": {
+                    "ID": "GP",
+                    "LocalizedName": "Gauteng"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "58189",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Jiangmen",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "GD",
+                    "LocalizedName": "Guangdong"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "58190",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Jieyang",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "GD",
+                    "LocalizedName": "Guangdong"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "59061",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Jiaozuo",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "HA",
+                    "LocalizedName": "Henan"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "59269",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Jingzhou",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "HB",
+                    "LocalizedName": "Hubei"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "61618",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Jiaxing",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "ZJ",
+                    "LocalizedName": "Zhejiang"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "61619",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Jinhua",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "ZJ",
+                    "LocalizedName": "Zhejiang"
+                }
+            }
+        ],
+        "Je": [
+            {
+                "Version": 1,
+                "Key": "299429",
+                "Type": "City",
+                "Rank": 25,
+                "LocalizedName": "Jeddah",
+                "Country": {
+                    "ID": "SA",
+                    "LocalizedName": "Saudi Arabia"
+                },
+                "AdministrativeArea": {
+                    "ID": "02",
+                    "LocalizedName": "Mecca"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "213225",
+                "Type": "City",
+                "Rank": 30,
+                "LocalizedName": "Jerusalem",
+                "Country": {
+                    "ID": "IL",
+                    "LocalizedName": "Israel"
+                },
+                "AdministrativeArea": {
+                    "ID": "JM",
+                    "LocalizedName": "Jerusalem"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "223078",
+                "Type": "City",
+                "Rank": 31,
+                "LocalizedName": "Jeonju",
+                "Country": {
+                    "ID": "KR",
+                    "LocalizedName": "South Korea"
+                },
+                "AdministrativeArea": {
+                    "ID": "45",
+                    "LocalizedName": "Jeollabuk-do"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "224209",
+                "Type": "City",
+                "Rank": 31,
+                "LocalizedName": "Jeju",
+                "Country": {
+                    "ID": "KR",
+                    "LocalizedName": "South Korea"
+                },
+                "AdministrativeArea": {
+                    "ID": "49",
+                    "LocalizedName": "Jeju-do"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "203179",
+                "Type": "City",
+                "Rank": 35,
+                "LocalizedName": "Jember",
+                "Country": {
+                    "ID": "ID",
+                    "LocalizedName": "Indonesia"
+                },
+                "AdministrativeArea": {
+                    "ID": "JI",
+                    "LocalizedName": "East Java"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "329548",
+                "Type": "City",
+                "Rank": 35,
+                "LocalizedName": "Jersey City",
+                "Country": {
+                    "ID": "US",
+                    "LocalizedName": "United States"
+                },
+                "AdministrativeArea": {
+                    "ID": "NJ",
+                    "LocalizedName": "New Jersey"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "306735",
+                "Type": "City",
+                "Rank": 42,
+                "LocalizedName": "Jerez de la Frontera",
+                "Country": {
+                    "ID": "ES",
+                    "LocalizedName": "Spain"
+                },
+                "AdministrativeArea": {
+                    "ID": "AN",
+                    "LocalizedName": "Andalusia"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "223116",
+                "Type": "City",
+                "Rank": 42,
+                "LocalizedName": "Jecheon",
+                "Country": {
+                    "ID": "KR",
+                    "LocalizedName": "South Korea"
+                },
+                "AdministrativeArea": {
+                    "ID": "43",
+                    "LocalizedName": "Chungcheongbuk-do"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "223080",
+                "Type": "City",
+                "Rank": 42,
+                "LocalizedName": "Jeongeup",
+                "Country": {
+                    "ID": "KR",
+                    "LocalizedName": "South Korea"
+                },
+                "AdministrativeArea": {
+                    "ID": "45",
+                    "LocalizedName": "Jeollabuk-do"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "171709",
+                "Type": "City",
+                "Rank": 43,
+                "LocalizedName": "Jena",
+                "Country": {
+                    "ID": "DE",
+                    "LocalizedName": "Germany"
+                },
+                "AdministrativeArea": {
+                    "ID": "TH",
+                    "LocalizedName": "Thuringia"
+                }
+            }
+        ],
+        "M": [
+            {
+                "Version": 1,
+                "Key": "308526",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Madrid",
+                "Country": {
+                    "ID": "ES",
+                    "LocalizedName": "Spain"
+                },
+                "AdministrativeArea": {
+                    "ID": "MD",
+                    "LocalizedName": "Madrid"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "242560",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Mexico City",
+                "Country": {
+                    "ID": "MX",
+                    "LocalizedName": "Mexico"
+                },
+                "AdministrativeArea": {
+                    "ID": "CMX",
+                    "LocalizedName": "México City"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "294021",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Moscow",
+                "Country": {
+                    "ID": "RU",
+                    "LocalizedName": "Russia"
+                },
+                "AdministrativeArea": {
+                    "ID": "MOW",
+                    "LocalizedName": "Moscow"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "26216",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Melbourne",
+                "Country": {
+                    "ID": "AU",
+                    "LocalizedName": "Australia"
+                },
+                "AdministrativeArea": {
+                    "ID": "VIC",
+                    "LocalizedName": "Victoria"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "204842",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Mumbai",
+                "Country": {
+                    "ID": "IN",
+                    "LocalizedName": "India"
+                },
+                "AdministrativeArea": {
+                    "ID": "MH",
+                    "LocalizedName": "Maharashtra"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "58192",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Maoming",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "GD",
+                    "LocalizedName": "Guangdong"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "58179",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Meizhou",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "GD",
+                    "LocalizedName": "Guangdong"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "60974",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Mianyang",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "SC",
+                    "LocalizedName": "Sichuan"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "253810",
+                "Type": "City",
+                "Rank": 20,
+                "LocalizedName": "Managua",
+                "Country": {
+                    "ID": "NI",
+                    "LocalizedName": "Nicaragua"
+                },
+                "AdministrativeArea": {
+                    "ID": "MN",
+                    "LocalizedName": "Managua"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "264885",
+                "Type": "City",
+                "Rank": 20,
+                "LocalizedName": "Manila",
+                "Country": {
+                    "ID": "PH",
+                    "LocalizedName": "Philippines"
+                },
+                "AdministrativeArea": {
+                    "ID": "MNL",
+                    "LocalizedName": "Metropolitan Manila"
+                }
+            }
+        ],
+        "Mizp": [
+            {
+                "Version": 1,
+                "Key": "215620",
+                "Type": "City",
+                "Rank": 85,
+                "LocalizedName": "Mizpe Ramon",
+                "Country": {
+                    "ID": "IL",
+                    "LocalizedName": "Israel"
+                },
+                "AdministrativeArea": {
+                    "ID": "D",
+                    "LocalizedName": "Southern District"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "2087743",
+                "Type": "City",
+                "Rank": 85,
+                "LocalizedName": "Mizpah",
+                "Country": {
+                    "ID": "US",
+                    "LocalizedName": "United States"
+                },
+                "AdministrativeArea": {
+                    "ID": "MN",
+                    "LocalizedName": "Minnesota"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "2192168",
+                "Type": "City",
+                "Rank": 85,
+                "LocalizedName": "Mizpah",
+                "Country": {
+                    "ID": "US",
+                    "LocalizedName": "United States"
+                },
+                "AdministrativeArea": {
+                    "ID": "NJ",
+                    "LocalizedName": "New Jersey"
+                }
+            }
+        ],
+        "T": [
+            {
+                "Version": 1,
+                "Key": "226396",
+                "Type": "City",
+                "Rank": 10,
+                "LocalizedName": "Tokyo",
+                "Country": {
+                    "ID": "JP",
+                    "LocalizedName": "Japan"
+                },
+                "AdministrativeArea": {
+                    "ID": "13",
+                    "LocalizedName": "Tokyo"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "106770",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Taiyuan",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "SX",
+                    "LocalizedName": "Shanxi"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "106780",
+                "Type": "City",
+                "Rank": 11,
+                "LocalizedName": "Tianjin",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "TJ",
+                    "LocalizedName": "Tianjin"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "58491",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Tongren",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "GZ",
+                    "LocalizedName": "Guizhou"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "102324",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Tangshan",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "HE",
+                    "LocalizedName": "Hebei"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "59573",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Taizhou",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "JS",
+                    "LocalizedName": "Jiangsu"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "60198",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Tongliao",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "NM",
+                    "LocalizedName": "Inner Mongolia"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "106571",
+                "Type": "City",
+                "Rank": 13,
+                "LocalizedName": "Tai'an",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "SD",
+                    "LocalizedName": "Shandong"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "58055",
+                "Type": "City",
+                "Rank": 15,
+                "LocalizedName": "Tianshui",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "GS",
+                    "LocalizedName": "Gansu"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "2333653",
+                "Type": "City",
+                "Rank": 15,
+                "LocalizedName": "Taizhou",
+                "Country": {
+                    "ID": "CN",
+                    "LocalizedName": "China"
+                },
+                "AdministrativeArea": {
+                    "ID": "ZJ",
+                    "LocalizedName": "Zhejiang"
+                }
+            }
+        ],
+        "Tel": [
+            {
+                "Version": 1,
+                "Key": "215854",
+                "Type": "City",
+                "Rank": 31,
+                "LocalizedName": "Tel Aviv",
+                "Country": {
+                    "ID": "IL",
+                    "LocalizedName": "Israel"
+                },
+                "AdministrativeArea": {
+                    "ID": "TA",
+                    "LocalizedName": "Tel Aviv"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "3431644",
+                "Type": "City",
+                "Rank": 45,
+                "LocalizedName": "Telanaipura",
+                "Country": {
+                    "ID": "ID",
+                    "LocalizedName": "Indonesia"
+                },
+                "AdministrativeArea": {
+                    "ID": "JA",
+                    "LocalizedName": "Jambi"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "300558",
+                "Type": "City",
+                "Rank": 45,
+                "LocalizedName": "Telok Blangah New Town",
+                "Country": {
+                    "ID": "SG",
+                    "LocalizedName": "Singapore"
+                },
+                "AdministrativeArea": {
+                    "ID": "05",
+                    "LocalizedName": "South West"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "325876",
+                "Type": "City",
+                "Rank": 51,
+                "LocalizedName": "Telford",
+                "Country": {
+                    "ID": "GB",
+                    "LocalizedName": "United Kingdom"
+                },
+                "AdministrativeArea": {
+                    "ID": "TFW",
+                    "LocalizedName": "Telford and Wrekin"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "169072",
+                "Type": "City",
+                "Rank": 51,
+                "LocalizedName": "Telavi",
+                "Country": {
+                    "ID": "GE",
+                    "LocalizedName": "Georgia"
+                },
+                "AdministrativeArea": {
+                    "ID": "KA",
+                    "LocalizedName": "Kakheti"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "230611",
+                "Type": "City",
+                "Rank": 51,
+                "LocalizedName": "Telsiai",
+                "Country": {
+                    "ID": "LT",
+                    "LocalizedName": "Lithuania"
+                },
+                "AdministrativeArea": {
+                    "ID": "TE",
+                    "LocalizedName": "Telšiai"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "2723742",
+                "Type": "City",
+                "Rank": 55,
+                "LocalizedName": "Telégrafo",
+                "Country": {
+                    "ID": "BR",
+                    "LocalizedName": "Brazil"
+                },
+                "AdministrativeArea": {
+                    "ID": "PA",
+                    "LocalizedName": "Pará"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "186933",
+                "Type": "City",
+                "Rank": 55,
+                "LocalizedName": "Tela",
+                "Country": {
+                    "ID": "HN",
+                    "LocalizedName": "Honduras"
+                },
+                "AdministrativeArea": {
+                    "ID": "AT",
+                    "LocalizedName": "Atlántida"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "3453754",
+                "Type": "City",
+                "Rank": 55,
+                "LocalizedName": "Telaga Asih",
+                "Country": {
+                    "ID": "ID",
+                    "LocalizedName": "Indonesia"
+                },
+                "AdministrativeArea": {
+                    "ID": "JB",
+                    "LocalizedName": "West Java"
+                }
+            },
+            {
+                "Version": 1,
+                "Key": "3453755",
+                "Type": "City",
+                "Rank": 55,
+                "LocalizedName": "Telagamurni",
+                "Country": {
+                    "ID": "ID",
+                    "LocalizedName": "Indonesia"
+                },
+                "AdministrativeArea": {
+                    "ID": "JB",
+                    "LocalizedName": "West Java"
+                }
+            }
+        ]
+    },
+    "currentconditions": {
+        "215752": [
+            {
+                "LocalObservationDateTime": "2022-09-06T19:52:00+03:00",
+                "EpochTime": 1662483120,
+                "WeatherText": "Clear",
+                "WeatherIcon": 33,
+                "HasPrecipitation": false,
+                "PrecipitationType": null,
+                "IsDayTime": false,
+                "Temperature": {
+                    "Metric": {
+                        "Value": 29.1,
+                        "Unit": "C",
+                        "UnitType": 17
+                    },
+                    "Imperial": {
+                        "Value": 84,
+                        "Unit": "F",
+                        "UnitType": 18
+                    }
+                },
+                "MobileLink": "http://www.accuweather.com/en/il/beersheba/215752/current-weather/215752?lang=en-us",
+                "Link": "http://www.accuweather.com/en/il/beersheba/215752/current-weather/215752?lang=en-us"
+            }
+        ],
+        "213225": [
+            {
+                "LocalObservationDateTime": "2022-09-06T19:52:00+03:00",
+                "EpochTime": 1662483120,
+                "WeatherText": "Mostly clear",
+                "WeatherIcon": 34,
+                "HasPrecipitation": false,
+                "PrecipitationType": null,
+                "IsDayTime": false,
+                "Temperature": {
+                    "Metric": {
+                        "Value": 21.7,
+                        "Unit": "C",
+                        "UnitType": 17
+                    },
+                    "Imperial": {
+                        "Value": 71,
+                        "Unit": "F",
+                        "UnitType": 18
+                    }
+                },
+                "MobileLink": "http://www.accuweather.com/en/il/jerusalem/213225/current-weather/213225?lang=en-us",
+                "Link": "http://www.accuweather.com/en/il/jerusalem/213225/current-weather/213225?lang=en-us"
+            }
+        ],
+        "215620": [
+            {
+                "LocalObservationDateTime": "2022-09-06T19:52:00+03:00",
+                "EpochTime": 1662483120,
+                "WeatherText": "Clear",
+                "WeatherIcon": 33,
+                "HasPrecipitation": false,
+                "PrecipitationType": null,
+                "IsDayTime": false,
+                "Temperature": {
+                    "Metric": {
+                        "Value": 23.1,
+                        "Unit": "C",
+                        "UnitType": 17
+                    },
+                    "Imperial": {
+                        "Value": 74,
+                        "Unit": "F",
+                        "UnitType": 18
+                    }
+                },
+                "MobileLink": "http://www.accuweather.com/en/il/mizpe-ramon/215620/current-weather/215620?lang=en-us",
+                "Link": "http://www.accuweather.com/en/il/mizpe-ramon/215620/current-weather/215620?lang=en-us"
+            }
+        ],
+        "215854": [
+            {
+                "LocalObservationDateTime": "2022-09-06T00:04:00+03:00",
+                "EpochTime": 1662411840,
+                "WeatherText": "Mostly clear",
+                "WeatherIcon": 34,
+                "HasPrecipitation": false,
+                "PrecipitationType": null,
+                "IsDayTime": false,
+                "Temperature": {
+                    "Metric": {
+                        "Value": 26,
+                        "Unit": "C",
+                        "UnitType": 17
+                    },
+                    "Imperial": {
+                        "Value": 79,
+                        "Unit": "F",
+                        "UnitType": 18
+                    }
+                },
+                "MobileLink": "http://www.accuweather.com/en/il/tel-aviv/215854/current-weather/215854?lang=en-us",
+                "Link": "http://www.accuweather.com/en/il/tel-aviv/215854/current-weather/215854?lang=en-us"
+            }
+        ]
+    }
+}
